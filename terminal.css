@@ -1,30 +1,141 @@
+body {
+  background: #008080;
+}
+.window {
+  font-family: 'Arial',sans-serif;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+@media all and (max-width: 740px) {
+    .window {
+        width: 100%;
+    }
+}
+@media all and (min-width: 741px) {
+    .window {
+        width: 740px;
+    }
+}
+.window_inner {
+  border: 1px solid;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  color: #c0c0c0;
+}
+.window_heading {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 16px;
+}
+.window_heading_icon {
+  background: url('win98_icon.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .window_heading_icon {
+    background-image: url('win98_icon.png');
+    background-size: 16px 16px;
+  }
+}
+.window_heading_buttons {
+  margin: 1px 0;
+  background: url('win98_controls.png') no-repeat;
+  width: 50px;
+  height: 14px;
+  float: right;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .window_heading_buttons {
+    background-image:   url('win98_controls.png');
+    background-size: 50px 14px;
+  }
+}
+.window_actions {
+  margin: 5px 9px;
+  line-height: 1;
+  color: #000;
+  font-size: 12px;
+}
+.window_content {
+  margin: 0 2px 2px 2px;
+  border: 1px solid;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  font-size: 14px;
+}
+.window_content_inner {
+  background: #000;
+  border: 1px solid;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-bottom-color: #dfdfdf;
+  border-right-color: #dfdfdf;
+  padding: 10px;
+}
+p {
+  margin: 0;
+}
 .terminal{
-  font-family:Courier;
-  color: #00FF00;
+  color: #c0c0c0;
 }
 .terminal_animated{
-  font-family:Courier;
-  color: #00FF00;
+  color: #c0c0c0;
   animation:blink 1.6s infinite;
 }
 @keyframes blink{
-  0%{		color: #00FF00;	}
+  0%{		color: #000000;	}
   50%{	color: transparent;	}
-  100%{	color: #00FF00;	}
+  100%{	color: #000000;	}
 }
 a:link {
   text-decoration: none;
-  color: #00FF00;
+  color: #c0c0c0;
 }
 a:hover {
   animation:blink2 0.3s infinite;
 }
 a:visited {
   text-decoration: none;
-  color: #00FF00;
+  color: #c0c0c0;
 }
 @keyframes blink2{
-  0%{		color: #00FF00;	}
+  0%{		color: #c0c0c0;	}
   50%{	color: transparent;	}
-  100%{	color: #00FF00;	}
+  100%{	color: #c0c0c0;	}
+}
+input[type=text] {
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  background-color: #000;
+  color: #c0c0c0;
+  width: 15em;
+}
+input[type=submit] {
+  background-color: #000;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  background-color: #000;
+  color: #c0c0c0;
+  text-align: center;
+  text-decoration: none;
+}
+::placeholder {
+  color: #c0c0c0;
+  opacity: 0.9;
 }
